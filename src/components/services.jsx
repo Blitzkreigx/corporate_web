@@ -35,7 +35,7 @@ export function ServicesStar() {
                     <button className="bg-black text-white border-none px-[8px] rounded-full cursor-default text-center"><small>Más Vendido</small></button>
                 </div>
                 <div className="py-[10px]">
-                    <h2 className="text-xl"><b>Servicio</b></h2>
+                    <h2 className="text-xl"><b>Tipo de Servicio</b></h2>
                     <p className="text-gray-600">Descripción detallada del servicio.</p>
                 </div>
             </div>
