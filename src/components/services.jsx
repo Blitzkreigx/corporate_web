@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useDarkModeContext } from "@/app/layout"
 
 export function ServicesPrimary() {
     return (
