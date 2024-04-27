@@ -31,7 +31,7 @@ export default function Contacto() {
                 </form>
             </section>
             <section className="grid grid-cols-1 items-center md:grid-cols-3">
-                    <div className="bg-gray-300 flex flex-col justify-center items-center h-[250px] py-[50px] gap-[15px] text-center md:col-span-2">
+                    <div className="contact__dates flex flex-col justify-center items-center h-[250px] py-[50px] gap-[15px] text-center md:col-span-2">
                         <div>
                             <h3><strong>Dirección</strong></h3>
                             <p>Centro Historico de la Ciudad de México, Lomas Nuevas, Callejón 28</p>
@@ -45,7 +45,7 @@ export default function Contacto() {
                             <p>(+52) 55 1234 1234</p>
                         </div>
                     </div>
-                    <div className="bg-gray-200 flex justify-center items-center gap-[15px] h-[250px] py-[50px]">
+                    <div className="contact__social-media bg-gray-200 flex justify-center items-center gap-[15px] h-[250px] py-[50px]">
                         <a href="#">
                             <img src="./brand-whatsapp.png" alt="whatsapp" className="max-w-[25px]" />
                         </a>
@@ -53,7 +53,7 @@ export default function Contacto() {
                             <img src="./brand-facebook.png" alt="facebook" className="max-w-[25px]" />
                         </a>
                         <a href="#">
-                            <img src="./brand-twitter.png" alt="twitter" className="max-w-[25px]" />
+                            <img src="./brand-x.png" alt="twitter" className="max-w-[25px]" />
                         </a>
                     </div>
             </section>
