@@ -1,5 +1,5 @@
 import { ServicesSecondary, ServicesStar } from "@/components/services";
-import '../../styles/body.css'
+import '../globals.css'
 
 export default function Servicios() {
     return (
@@ -12,7 +12,7 @@ export default function Servicios() {
                     <ServicesStar />
                     <ServicesStar />
                 </div>
-                <div className="mt-[50px] flex flex-wrap justify-center items-center gap-[25px]">
+                <div className="mt-[100px] flex flex-wrap justify-center items-center gap-[25px]">
                     <ServicesSecondary />
                     <ServicesSecondary />
                     <ServicesSecondary />

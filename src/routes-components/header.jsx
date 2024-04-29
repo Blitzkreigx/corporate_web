@@ -14,16 +14,12 @@ const darkTheme = {
   text: "#ccc"
 };
 
-
 export default function Header({ handleDarkMode, isDarkMode }) {
   const [navIsOpen, setNavIsOpen] = useState(false)
   const GlobalStyles = createGlobalStyle`
     body {
       background-color: ${props => props.theme.body};
       color: ${props => props.theme.text};
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       transition: background-color 0.3s, color 0.3s;
     }
     .contact__dates {
@@ -48,6 +44,19 @@ export default function Header({ handleDarkMode, isDarkMode }) {
       background-color: ${isDarkMode ? '#171717' : '#fff'};
       border: 1px solid ${isDarkMode ? '#171717' : '#ccc'};
     }
+
+    .input {
+      background-color: ${isDarkMode ? '#171717' : '#eee'};
+      border: ${isDarkMode ? 'none' : '1px solid #eee'};
+    }
+
+    .btn {
+      background-color: ${isDarkMode ? '#171717' : '#000'};
+    }
+
+    .member {
+      border: 1px solid ${isDarkMode ? '#171717' : '#eee'}
+    }
   `;
 
   const handlerOpenNavbar = () => {
@@ -59,8 +68,8 @@ export default function Header({ handleDarkMode, isDarkMode }) {
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <header className={`flex justify-between items-center gap-[10px] py-[10px] px-[25px] w-full h-[70px] mb-[20px]`}>
-        <Link href="/">
-          <img src={`${isDarkMode ? './app-window-light.png' : './app-window.png'}`} alt="Logo" className="max-w-[45px]" />
+        <Link href="/" className="flex flex-row gap-[5px]">
+          <img src={`${isDarkMode ? './info-octagon-light.svg' : './info-octagon.svg'}`} alt="Logo" className="max-w-[50px]" />
         </Link>
         <nav className={`absolute top-[70px] left-0 w-full gap-[20px] justify-center items-center md:relative md:top-0 md:flex ${navIsOpen ? 'flex' : 'hidden'}`}>
           <Link href="/">Inicio</Link>

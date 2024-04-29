@@ -17,14 +17,14 @@ export default function Footer({ isDarkMode, handleDarkMode }) {
                 <a href="">Derechos Reservados</a>
               </div>
               <div className="flex justify-center items-start gap-[10px] p-[10px]">
-                <a href="#">
+                <a href="https://web.whatsapp.com/" target='_BLANK'>
                     <img src={`${isDarkMode ? './brand-whatsapp-light.png' : './brand-whatsapp.png'}`} alt="whatsapp" className="max-w-[25px]" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/" target='_BLANK'>
                     <img src={`${isDarkMode ? './brand-facebook-light.png' : './brand-facebook.png'}`} alt="facebook" className="max-w-[25px]" />
                 </a>
-                <a href="#">
-                    <img src={`${isDarkMode ? './brand-x-light.png' : './brand-x.png'}`} alt="twitter" className="max-w-[25px]" />
+                <a href="https://twitter.com/" target='_BLANK'>
+                    <img src={`${isDarkMode ? './brand-x-light.png' : './brand-x.png'}`} alt="x" className="max-w-[25px]" />
                 </a>
               </div>
             </footer>

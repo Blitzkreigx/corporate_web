@@ -1,4 +1,4 @@
-import '../../styles/body.css'
+import '../globals.css'
 
 export default function Contacto() {
     return (
@@ -17,17 +17,17 @@ export default function Contacto() {
                 <form className="w-full box-border p-[10px] flex flex-col gap-[25px]">
                     <div className="flex flex-col justify-center items-center min-w-[350px] max-w-[500px] mx-auto">
                         <label htmlFor="name">Nombre Completo</label>
-                        <input type="text" name="name" id="name" required className="w-full box-border border-[1px] bg-gray-100 px-[5px]" />
+                        <input type="text" name="name" id="name" required className="input w-full box-border px-[5px]" />
                     </div>
                     <div className="flex flex-col justify-center items-center min-w-[350px] max-w-[500px] mx-auto">
                         <label htmlFor="email">Correo Electronico</label>
-                        <input type="email" name="email" id="email" required className="w-full box-border border-[1px] bg-gray-100 px-[5px]" />
+                        <input type="email" name="email" id="email" required className="input w-full box-border px-[5px]" />
                     </div>
                     <div className="flex flex-col justify-center items-center min-w-[350px] max-w-[500px] mx-auto">
                         <label htmlFor="message">Mensaje</label>
-                        <textarea name="message" id="message" className="w-full box-border border-[1px] bg-gray-100 min-h-[100px] px-[5px]"></textarea>
+                        <textarea name="message" id="message" className="input w-full box-border min-h-[100px] px-[5px]"></textarea>
                     </div>
-                    <input type="submit" value="Enviar" className="bg-black text-white py-[5px] cursor-pointer rounded-[3px] min-w-[350px] max-w-[500px] mx-auto box-border" />
+                    <input type="submit" value="Enviar" className="btn text-white py-[5px] cursor-pointer rounded-[3px] min-w-[350px] max-w-[500px] mx-auto box-border" />
                 </form>
             </section>
             <section className="grid grid-cols-1 items-center md:grid-cols-3">
@@ -46,13 +46,13 @@ export default function Contacto() {
                         </div>
                     </div>
                     <div className="contact__social-media bg-gray-200 flex justify-center items-center gap-[15px] h-[250px] py-[50px]">
-                        <a href="#">
+                        <a href="https://web.whatsapp.com/" target='_BLANK'>
                             <img src="./brand-whatsapp.png" alt="whatsapp" className="max-w-[25px]" />
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/" target='_BLANK'>
                             <img src="./brand-facebook.png" alt="facebook" className="max-w-[25px]" />
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/" target='_BLANK'>
                             <img src="./brand-x.png" alt="twitter" className="max-w-[25px]" />
                         </a>
                     </div>

@@ -1,5 +1,4 @@
-import Members from "@/components/members";
-import '../../styles/body.css'
+import '../globals.css'
 
 export default function SobreNosotros() {
     return (
@@ -19,11 +18,63 @@ export default function SobreNosotros() {
             <section>
                 <div className="text-center px-[10px] py-[50px]">
                     <h2 className="text-3xl mb-[25px]">Nuestro Equipo</h2>
-                    {/* MIEMBROS DEL EQUIPO CON ORDEN DE CUADRICULA DESORDENADA TIPO VENTO */}
-                    <div className="flex flex-wrap justify-center items-center gap-[25px]">
-                        <Members />
-                        <Members />
-                        <Members />
+                    <div className="md:max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[25px] md:gap-0">
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px] md:col-span-2 md:row-span-2">
+                            <div className="w-[120px] h-[120px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>NOMBRE</b></h3>
+                            <h3 className="">JEFE DE LA EMPRESA</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px]">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px] md:row-span-2">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px]">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px]">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px]">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
+                        <div className="member p-[10px] w-full text-center mx-auto rounded-[8px] border-gray-300 border-[1px] md:col-span-2">
+                            <div className="w-[90px] h-[90px] mx-auto rounded-full bg-white overflow-hidden flex justify-center items-center">
+                                <img src="./replacement-user.jpg" alt="Miembro" className="" />
+                            </div>
+                            <h3 className="mt-[10px] text-lg"><b>Nombre</b></h3>
+                            <h3 className="">Función</h3>
+                            <p className="mt-[15px] text-gray-600">Descripción de las actividades de la persona</p>
+                        </div>
                     </div>
                 </div>
             </section>
