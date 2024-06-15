@@ -8,7 +8,6 @@ const lightTheme = {
   body: "#fff",
   text: "#000"
 };
-
 const darkTheme = {
   body: "#000",
   text: "#ccc"
@@ -22,40 +21,37 @@ export default function Header({ handleDarkMode, isDarkMode }) {
       color: ${props => props.theme.text};
       transition: background-color 0.3s, color 0.3s;
     }
-    .contact__dates {
-      background-color: ${isDarkMode ? 'rgb(25,25,25)' : '#ccc'};
-    }
-
-    .contact__social-media {
-      background-color: ${isDarkMode ? 'rgb(50,50,50)' : '#bbb'};
-    }
 
     .services {
-      background-color: ${isDarkMode ? '#171717' : '#fff'};
-      border: 1px solid ${isDarkMode ? '#171717' : '#ccc'};
+      background-color: ${isDarkMode ? '#111' : '#fff'};
+      border: 1px solid ${isDarkMode ? '#111' : '#ccc'};
     }
 
     .services-star {
-      background-color: ${isDarkMode ? '#3d3d3d' : '#eee'};
-      border: 1px solid ${isDarkMode ? '#171717' : '#ccc'};
+      background-color: ${isDarkMode ? '#333' : '#eee'};
+      border: 1px solid ${isDarkMode ? '#111' : '#ccc'};
     }
 
     .testimonials {
-      background-color: ${isDarkMode ? '#171717' : '#fff'};
-      border: 1px solid ${isDarkMode ? '#171717' : '#ccc'};
+      background-color: ${isDarkMode ? '#111' : '#fff'};
+      border: 1px solid ${isDarkMode ? '#111' : '#ccc'};
     }
 
     .input {
-      background-color: ${isDarkMode ? '#171717' : '#eee'};
+      background-color: ${isDarkMode ? '#111' : '#eee'};
       border: ${isDarkMode ? 'none' : '1px solid #eee'};
     }
 
-    .btn {
-      background-color: ${isDarkMode ? '#171717' : '#000'};
+    .button {
+      background-color: ${isDarkMode ? '#333' : '#222'};
     }
 
     .member {
-      border: 1px solid ${isDarkMode ? '#171717' : '#eee'}
+      border: 1px solid ${isDarkMode ? '#111' : '#eee'}
+    }
+
+    .contact {
+      background-color: ${isDarkMode ? '#111' : '#ddd'};
     }
   `;
 
@@ -67,19 +63,23 @@ export default function Header({ handleDarkMode, isDarkMode }) {
     <>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
-      <header className={`flex justify-between items-center gap-[10px] py-[10px] px-[25px] w-full h-[70px] mb-[20px]`}>
+      <header className={`flex justify-between items-center gap-[10px] py-[10px] px-[25px] w-full h-[70px] z-30 relative text-white`}>
         <Link href="/" className="flex flex-row gap-[5px]">
-          <img src={`${isDarkMode ? './info-octagon-light.svg' : './info-octagon.svg'}`} alt="Logo" className="max-w-[50px]" />
+          <img src='./info-octagon-light.svg' alt="Logo" className="max-w-[50px]" />
         </Link>
         <nav className={`absolute top-[70px] left-0 w-full gap-[20px] justify-center items-center md:relative md:top-0 md:flex ${navIsOpen ? 'flex' : 'hidden'}`}>
           <Link href="/">Inicio</Link>
-          <Link href="/contacto">Contacto</Link>
           <Link href="/servicios">Servicios</Link>
-          <Link href="/sobre-nosotros">Nosotros</Link>
+          <Link href="/acerca-de">Acerca de</Link>
+          <Link href="/contacto">Contacto</Link>
         </nav>
         <div className="flex gap-[15px]">
-          <img src={`./${isDarkMode ? 'sun' : 'moon'}.png`} alt={isDarkMode ? 'sun' : 'moon'} className="max-w-[25px] cursor-pointer" onClick={handleDarkMode} />
-          <img src={`${isDarkMode ? './menu-2-light.png' : './menu-2.png'}`} alt="menu" className="max-w-[25px] cursor-pointer md:hidden" onClick={handlerOpenNavbar} />
+          <button onClick={handleDarkMode}>
+            <img src={`./${isDarkMode ? 'sun' : 'moon'}.png`} alt={isDarkMode ? 'sun' : 'moon'} className="max-w-[25px] cursor-pointer" />
+          </button>
+          <button onClick={handlerOpenNavbar}>
+            <img src='./menu-2-light.png' alt="menu" className="max-w-[25px] cursor-pointer md:hidden" />
+          </button>
         </div>
       </header>
       </ThemeProvider>

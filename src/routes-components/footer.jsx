@@ -9,7 +9,7 @@ export default function Footer({ isDarkMode, handleDarkMode }) {
                   <Link href="/">Inicio</Link>
                   <Link href="/contacto">Contacto</Link>
                   <Link href="/servicios">Servicios</Link>
-                  <Link href="/sobre-nosotros">Nosotros</Link>
+                  <Link href="/acerca-de">Acerca de</Link>
                 </nav>
               </div>
               <div className="flex flex-col justify-center items-center p-[10px]">

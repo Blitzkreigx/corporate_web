@@ -6,8 +6,8 @@ export default function Testimonials() {
                   <img src="./replacement-user.jpg" alt="Cliente" className="rounded-full" />
                 </div>
                 <div className="col-span-2">
-                  <h3 className="text-xl"><b>Nombre del Cliente</b></h3>
-                  <p className="text-gray-600">Contenido del testimonio</p>
+                  <h3 className="text-xl"><b>Lorem ipsum dolor</b></h3>
+                  <p className="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </>
